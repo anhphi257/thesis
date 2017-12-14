@@ -1,0 +1,38 @@
+\documentclass[13pt,a4paper,openright]{extreport}
+
+\include{./Preamble/preamble}
+
+\begin{document}
+\include{cover}
+\renewcommand{\baselinestretch}{1.25}\normalsize
+\pagenumbering{roman}
+\include{./Mission/commend}
+\include{./Mission/thanks}
+%\include{./Abstract/abstract}
+%\include{./Mission/pream}
+
+\cleardoublepage
+\tableofcontents
+\cleardoublepage
+\listoftables
+\addcontentsline{toc}{chapter}{DANH SÁCH BẢNG}
+\cleardoublepage
+\listoffigures
+\addcontentsline{toc}{chapter}{DANH SÁCH HÌNH VẼ}
+\include{./Mission/acronym}
+
+\cleardoublepage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\include{./Mission/mission}
+\include{./Chapter1/chapter1}
+\include{./Chapter2/chapter2}
+\include{./Chapter3/chapter3}
+\include{./Chapter4/chapter4}
+% \addcontentsline{toc}{chapter}{Tổng kết}
+\include{./References/ref}
+%\include{./Mission/paper}
+\end{document}
+
+
